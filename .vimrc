@@ -6,7 +6,8 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 set tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype php setlocal ts=4 sw=4 expandtab
+autocmd Filetype php set tabstop=4 shiftwidth=4 expandtab
+autocmd BufEnter *.blade.php set tabstop=2 shiftwidth=2 expandtab smarttab
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
