@@ -23,6 +23,7 @@ highlight CursorColumn ctermfg=cyan ctermbg=cyan
 set cursorcolumn
 set cursorline
 
+" Folding
 set foldmethod=indent
 set nofoldenable
 map fs za
@@ -32,3 +33,15 @@ map fO zR
 map fj zm
 map fJ zM
 
+" Switch window with <C-j>, <C-k>
+nore <silent> <C-K> :wincmd k<CR>
+nore <silent> <C-J> :wincmd j<CR>
+nore <silent> <C-H> :wincmd h<CR>
+nore <silent> <C-L> :wincmd l<CR>
+
+" ; instead of :
+nore ; :
+" \ instead of ;
+nore \ ;
+" jk instead of <Esc>
+inore jk <Esc>
