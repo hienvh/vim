@@ -46,3 +46,6 @@ nore ; :
 nore \ ;
 " jk instead of <Esc>
 inore jk <Esc>
+
+" MRU
+nmap :mru :MRU
