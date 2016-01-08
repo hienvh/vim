@@ -1,1 +1,1 @@
-just test add file on dev1 --dev1
+just test add file on master --master
